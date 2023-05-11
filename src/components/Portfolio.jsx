@@ -19,7 +19,7 @@ const PortfolioSection = () => {
         infiniteLoop
         interval={1000}
         centerMode
-        centerSlidePercentage={33}
+        centerSlidePercentage={34}
       >
         {/* Add Carousel Items */}
               <div className="item expertises-item">

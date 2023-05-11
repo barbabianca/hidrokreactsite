@@ -7221,6 +7221,8 @@ button.bg-dark:focus {
 }
 
 .bg-transparent {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   background-color: transparent !important;
 }
 
@@ -11799,4 +11801,9 @@ pre .code {
 .testmonial-container {
   max-width: 540px;
 }
+}
+
+/* In your CSS file */
+.bg-transparent {
+  background-color: transparent !important;
 }

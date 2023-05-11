@@ -1,24 +1,33 @@
 // import React from 'react'
 import {TfiMicrophone, TfiEmail, TfiFacebook, TfiTwitterAlt, TfiGoogle, TfiPinterestAlt, TfiInstagram, TfiRss} from 'react-icons/tfi';
-import './All.css';
+// import './All.css';
 import { Navbar, Nav, Carousel, Container, Col, Row } from 'react-bootstrap';
 // import $ from 'jquery';
-// import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import { Link } from 'react-scroll';
 
 
-function Header() {
-  // const [expanded, setExpanded] = useState(false);
 
-  // const handleNavClick = (event) => {
-  //   if (event.target.hash !== "") {
-  //     event.preventDefault();
-  //     var hash = event.target.hash;
-  //     $('html, body').animate({scrollTop: $(hash).offset().top}, 50, function(){
-  //       window.location.hash = hash;
-  //     });
-  //   }
-  // };
+function Header() {
+
+  const [isBgWhite, setIsBgWhite] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.pageYOffset;
+    if (offset > 20) {
+      setIsBgWhite(true);
+    } else {
+      setIsBgWhite(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   const handleNavClick = (event) => {
     event.preventDefault();
@@ -70,16 +79,19 @@ function Header() {
     
     <>
 
-      {/* <Navbar expanded = {expanded} bg="light" expand="lg" id="scrollspy" className="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20"> */}
-      <Navbar bg="light" expand="lg" id="scrollspy" className="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+
+      <Navbar expand="lg" className={`navbar navbar-light fixed-top ${isBgWhite ? 'bg-white' : 'bg-transparent'}`}
+  id="scrollspy"
+  data-spy="scroll"
+  data-offset-top="20">
   
         <div className="container">
           <Navbar.Brand href="#"><img src="src/assets/imgs/Hidrok-logo-transparent.png" alt="" className="brand-img" /></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarSupportedContent">
-            {/* <span className="navbar-toggler-icon"></span> */}
+          <Navbar.Toggle aria-controls="responsive-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
 
-          <Navbar.Collapse id="navbarSupportedContent">
+          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" onClick={(event) => {handleNavClick(event)}}>
             <Nav.Link href="#home">Anasayfa</Nav.Link>
             <Nav.Link href="#about">Hakkımızda</Nav.Link>
