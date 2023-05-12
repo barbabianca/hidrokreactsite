@@ -1,18 +1,9 @@
 {
   "functions": [
-    // {
-    //   "source": "functions",
-    //   "codebase": "default",
-    //   "ignore": [
-    //     "node_modules",
-    //     ".git",
-    //     "firebase-debug.log",
-    //     "firebase-debug.*.log"
-    //   ]
-    // },
+
     {
-      "source": "formmailigonder",
-      "codebase": "formmailigonder",
+      "source": "functions",
+      "codebase": "functions",
       "ignore": [
         "node_modules",
         ".git",
