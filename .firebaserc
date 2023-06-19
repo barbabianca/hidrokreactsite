@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
     "default": "hidrokcontactform"
+=======
+    "default": "hidrokform"
+>>>>>>> d16635178cf12a95163cc3a48d9913e2b9fe4a81
   }
 }

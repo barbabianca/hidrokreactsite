@@ -3,14 +3,14 @@ import "firebase/compat/database";
 
 const firebaseConfig = {
   // your Firebase project configuration
-  apiKey: "AIzaSyB3ER7re6zEpQ4G_8B3WtuFa34csvpza48",
-  authDomain: "hidrokcontactform.firebaseapp.com",
-  databaseURL: "https://hidrokcontactform-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "hidrokcontactform",
-  storageBucket: "hidrokcontactform.appspot.com",
-  messagingSenderId: "313016218461",
-  appId: "1:313016218461:web:13276b3dde72f130452eb4",
-  measurementId: "G-9J60CZX1KF"
+  apiKey: "AIzaSyAiKbVJ1jzzYEFmCCbWzPXwtiASb64Ps2Q",
+  authDomain: "hidrokform.firebaseapp.com",
+  databaseURL: "https://hidrokform-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "hidrokform",
+  storageBucket: "hidrokform.appspot.com",
+  messagingSenderId: "958303329661",
+  appId: "1:958303329661:web:8d022b6a99dc22b271c014",
+  measurementId: "G-HWZGFFWZL7"
 }
 
 

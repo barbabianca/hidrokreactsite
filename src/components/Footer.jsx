@@ -1,16 +1,20 @@
 import { TfiArrowUp, TfiLocationPin, TfiMicrophone, TfiEmail, TfiFacebook, TfiTwitterAlt, TfiGoogle, TfiPinterestAlt, TfiInstagram, TfiRss } from 'react-icons/tfi';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+<<<<<<< HEAD
 import firebaseDB from "../firebase";
 import 'firebase/database';
 // import axios from 'axios';
 
 
 // import { ToastContainer, toast } from "react-toastify";
+=======
+import axios from 'axios';
+>>>>>>> d16635178cf12a95163cc3a48d9913e2b9fe4a81
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { ToastContainer, toast } from 'react-bootstrap';
-
+import firebaseDB from "../firebase";
+import 'firebase/database';
 
 const ContactSection = () => {
     const [showButton, setShowButton] = useState(false);
@@ -30,7 +34,6 @@ const ContactSection = () => {
         document.documentElement.scrollTop = 0;
     };
 
-
     const [state, setState] = useState({
         name: "",
         email: "",
@@ -39,14 +42,37 @@ const ContactSection = () => {
     });
 
     const { name, email, subject, message } = state;
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!name || !email || !subject || !message) {
-            toast.error("Please provide value in each input field");
+            toast.error("Please provide a value in each input field");
         } else {
+<<<<<<< HEAD
             firebaseDB.child("message").push(state);
             setState({ name: "", email: "", subject: "", message: "" });
             toast.success("Form Submitted Successfully");
+=======
+            try {
+                await firebaseDB.child("message").push(state);
+                setState({ name: "", email: "", subject: "", message: "" });
+
+                const data = {
+                    name,
+                    email,
+                    subject,
+                    message
+                };
+
+                const response = await axios.post("https://us-central1-hidrokform.cloudfunctions.net/sendMailOverHTTP", data);
+                console.log(response.data);
+
+                toast.success("Form submitted successfully");
+            } catch (error) {
+                console.error(error);
+                toast.error("An error occurred while submitting the form");
+            }
+>>>>>>> d16635178cf12a95163cc3a48d9913e2b9fe4a81
         }
     };
     // const handleSubmit = (e) => {
@@ -81,11 +107,9 @@ const ContactSection = () => {
       
 
     const handleInputChange = (e) => {
-        let { name, value } = e.target;
+        const { name, value } = e.target;
         setState({ ...state, [name]: value });
     };
-    
-
     return (
         <section id="contact" className="section pb-0">
             <Container>
