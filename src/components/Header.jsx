@@ -86,7 +86,7 @@ function Header() {
   data-offset-top="20">
   
         <div className="container">
-          <Navbar.Brand href="#"><img src="/assets/imgs/Hidrok-logo-transparent.png" alt="" className="brand-img" /></Navbar.Brand>
+          <Navbar.Brand href="#"><img src="https://github.com/barbabianca/hidrokreactsite/blob/main/src/assets/imgs/Hidrok-logo-transparent.png?raw=true" alt="" className="brand-img" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
