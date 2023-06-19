@@ -1,5 +1,7 @@
-
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import manifoldBlokTasarimiImg from '../assets/imgs/manifold-blok-tasarimi.jpg';
+import hidrolikUniteImg from '../assets/imgs/hidrolik-unite.jpg';
+import hidrolikTankImg from '../assets/imgs/hidrolik-tank.jpg';
 
 const ServiceSection = () => {
   return (
@@ -12,7 +14,7 @@ const ServiceSection = () => {
             <Card className="border-0 text-dark">
               <Card.Img
                 variant="top"
-                src="src/assets/imgs/manifold-blok-tasarimi.jpg"
+                src={manifoldBlokTasarimiImg}
                 alt="manifold-sogutma-blogu"
               />
               <Card.Body>
@@ -29,7 +31,7 @@ const ServiceSection = () => {
             <Card className="border-0 text-dark">
               <Card.Img
                 variant="top"
-                src="src/assets/imgs/hidrolik-unite.jpg"
+                src={hidrolikUniteImg}
                 alt="hidrolik-unite"
               />
               <Card.Body>
@@ -46,7 +48,7 @@ const ServiceSection = () => {
             <Card className="border-0 text-dark">
               <Card.Img
                 variant="top"
-                src="src/assets/imgs/hidrolik-tank.jpg"
+                src={hidrolikTankImg}
                 alt="hidrolik-tank"
               />
               <Card.Body>
