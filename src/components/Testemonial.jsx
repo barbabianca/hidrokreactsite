@@ -1,7 +1,9 @@
 import {TfiQuoteLeft, TfiQuoteRight} from 'react-icons/tfi';
-// import './All.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import ParkerHannifinImg from '../assets/imgs/Parker_Hannifin.jpeg';
+import HiDesLogoImg from '../assets/imgs/Hi-Des Logo (500 × 500 px).jpg';
+import FnssLogoImg from '../assets/imgs/fnss-logo.png';
 
 const TestimonialSection = () => {
   return (
@@ -23,7 +25,7 @@ const TestimonialSection = () => {
       >
         {/* Add Carousel Items */}
         <div className="textmonial-item">
-             <img src="src/assets/imgs/Parker_Hannifin.jpeg" className="avatar" alt="parker_logo" />
+             <img src={ParkerHannifinImg} className="avatar" alt="parker_logo" />
              <div className="des">
                <TfiQuoteLeft className="ti-quote-left font-weight-bold"/>
                <p>HİDROK sektördeki yerini müşterilerde sağladığı güven duygusu ile sağlamlaştırıyor. Biz birlikte gözü kapalı çalışabileceğimiz adresteyiz, ESKOOP&apos;ta HİDROK.</p>
@@ -36,7 +38,7 @@ const TestimonialSection = () => {
         </div>
         
         <div className="textmonial-item">
-             <img src="src/assets/imgs/Hi-Des Logo (500 × 500 px).jpg" className="avatar" alt="hi-des_logo" />
+             <img src={HiDesLogoImg} className="avatar" alt="hi-des_logo" />
              <div className="des">
                <TfiQuoteLeft className="ti-quote-left font-weight-bold"/>
                <p>HİDROK müşteri memnuniyetini önceleyen iş modeliyle firmamızın değişmez tedarikçileri arasında yerini almıştır.</p>
@@ -49,7 +51,7 @@ const TestimonialSection = () => {
         </div>
 
         <div className="textmonial-item">
-                        <img src="src/assets/imgs/fnss-logo.png" className="avatar" alt="fnss-logo" />
+                        <img src={FnssLogoImg} className="avatar" alt="fnss-logo" />
                         <div className="des">
                             <TfiQuoteLeft className="ti-quote-left font-weight-bold"/>
                             <p>Hidrolik tank tasarımı ve üretimi için girdiğimiz HIDROK&apos;tan hidrolik ünite tasarımı ve imalatı için anlaşarak çıktık. Esnekliğe açık olması HİDROK&apos;un bize sağladığı en büyük avantaj.</p>
@@ -57,7 +59,7 @@ const TestimonialSection = () => {
 
                             <div className="line"></div>
                             <h6 className="name">Semih</h6>
-                            <h6 className="xs-font">Mühendislik Bölüm Müdürü</h6>
+                            <h6 className="xs-font">Engineering Department Manager</h6>
                         </div>
         </div>
               
@@ -68,6 +70,7 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
+
 
 
 
