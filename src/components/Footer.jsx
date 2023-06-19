@@ -1,19 +1,19 @@
 import { TfiArrowUp, TfiLocationPin, TfiMicrophone, TfiEmail, TfiFacebook, TfiTwitterAlt, TfiGoogle, TfiPinterestAlt, TfiInstagram, TfiRss } from 'react-icons/tfi';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-<<<<<<< HEAD
+
 import firebaseDB from "../firebase";
 import 'firebase/database';
-// import axios from 'axios';
+
 
 
 // import { ToastContainer, toast } from "react-toastify";
-=======
+
 import axios from 'axios';
->>>>>>> d16635178cf12a95163cc3a48d9913e2b9fe4a81
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import firebaseDB from "../firebase";
+
 import 'firebase/database';
 
 const ContactSection = () => {
@@ -48,11 +48,11 @@ const ContactSection = () => {
         if (!name || !email || !subject || !message) {
             toast.error("Please provide a value in each input field");
         } else {
-<<<<<<< HEAD
+
             firebaseDB.child("message").push(state);
             setState({ name: "", email: "", subject: "", message: "" });
             toast.success("Form Submitted Successfully");
-=======
+
             try {
                 await firebaseDB.child("message").push(state);
                 setState({ name: "", email: "", subject: "", message: "" });
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 console.error(error);
                 toast.error("An error occurred while submitting the form");
             }
->>>>>>> d16635178cf12a95163cc3a48d9913e2b9fe4a81
+
         }
     };
     // const handleSubmit = (e) => {
