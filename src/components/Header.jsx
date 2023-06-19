@@ -5,7 +5,7 @@ import { Navbar, Nav, Carousel, Container, Col, Row } from 'react-bootstrap';
 // import $ from 'jquery';
 import { useState, useEffect } from 'react';
 // import { Link } from 'react-scroll';
-import logo from '.src/assets/imgs/Hidrok-logo-transparent.png'; // adjust the path as necessary
+import logo from '../assets/imgs/Hidrok-logo-transparent.png'; // adjust the path as necessary
 
 
 
