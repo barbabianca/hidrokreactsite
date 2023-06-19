@@ -1,6 +1,6 @@
 import { TfiUser, TfiThumbUp, TfiComments } from 'react-icons/tfi';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
-import BlogImage from "src/assets/imgs/Why-Choke-Valves-are-Essential-in-Pilot--8aec.jpg";
+import BlogImage from "../assets/imgs/Why-Choke-Valves-are-Essential-in-Pilot--8aec.jpg";
 
 const BlogSection = () => {
   return (
