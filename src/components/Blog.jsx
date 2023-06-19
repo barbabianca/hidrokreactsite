@@ -1,6 +1,6 @@
-import {TfiUser , TfiThumbUp , TfiComments} from 'react-icons/tfi';
-
+import { TfiUser, TfiThumbUp, TfiComments } from 'react-icons/tfi';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
+import BlogImage from "src/assets/imgs/Why-Choke-Valves-are-Essential-in-Pilot--8aec.jpg";
 
 const BlogSection = () => {
   return (
@@ -11,10 +11,10 @@ const BlogSection = () => {
         <Row className="blog-wrapper">
           <Col sm={12} md={6} lg={4}>
             <div className="img-wrapper">
-              <img src="src/assets/imgs/Why-Choke-Valves-are-Essential-in-Pilot--8aec.jpg" alt="Why-Choke-Valves-are-Essential-in-Pilot-DCV" />
+              <img src={BlogImage} alt="Why Choke Valves are Essential in Pilot Operated Directional Control Valves" />
               <div className="date-container">
                 <h6 className="day">29</h6>
-                <h6 className="mun">Jun</h6> 
+                <h6 className="month">Jun</h6> 
               </div>
             </div>
           </Col>
@@ -22,9 +22,9 @@ const BlogSection = () => {
           <Col sm={12} md={6} lg={8}>
             <div className="txt-wrapper">
               <h4 className="blog-title">The Importance of Pilot Choke Valves</h4>
-              <p>A pilot choke valve is a type of valve designed to control fluid flow in a hydraulic system. Generally, it is used to regulate the fluid flow through a small hole on the valve which creates a pressure drop. This pressure drop helps to regulate the fluid flow and prevent damage to the system.
+              <p>A pilot choke valve is a type of valve designed to control liquid flow in a hydraulic system. Generally, it is used to regulate liquid flow through a small hole on the valve which creates a pressure drop. This pressure drop helps to regulate the liquid flow and prevent damage to the system.
 
-                  On the other hand, a pilot-operated DCV is a type of directional control valve that uses a pilot valve to control the flow of hydraulic fluid. The pilot valve is usually an electromagnetic valve that is controlled by an electrical signal. When the pilot valve is energized, it opens a passage in the main valve for the hydraulic fluid to flow, which controls the fluid flow in the system.</p>
+                  On the other hand, a pilot operated directional control valve (DCV) is a type of direction control valve that uses a pilot valve to control the flow of hydraulic fluid. The pilot valve is usually an electromagnetic valve controlled by an electrical signal. When the pilot valve is energized, it opens a passage for hydraulic fluid to flow in the main valve, thus controlling the fluid flow in the system.</p>
 
               <Badge variant="info">Hydraulic Valves</Badge>
 
