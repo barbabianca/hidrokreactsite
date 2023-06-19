@@ -3,6 +3,8 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import firebaseDB from "../firebase";
 import 'firebase/database';
+import axios from 'axios';
+
 
 // import { ToastContainer, toast } from "react-toastify";
 import { ToastContainer, toast } from 'react-toastify';
@@ -42,11 +44,41 @@ const ContactSection = () => {
         if (!name || !email || !subject || !message) {
             toast.error("Please provide value in each input field");
         } else {
-            firebaseDB.child("contacts").push(state);
+            firebaseDB.child("message").push(state);
             setState({ name: "", email: "", subject: "", message: "" });
             toast.success("Form Submitted Successfully");
         }
     };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (!name || !email || !subject || !message) {
+    //       toast.error('Please provide a value in each input field');
+    //     } else {
+    //         firebaseDB.child("contacts").push(state);
+    //        setState({ name: "", email: "", subject: "", message: "" });
+    //        toast.success("Form Submitted Successfully");
+    //       const data = {
+    //         name: state.name,
+    //         email: state.email,
+    //         mobile: '', // Add the mobile field if necessary
+    //         message: state.message
+    //       };
+      
+    //       axios
+    //         .post('https://us-central1-hidrokcontactform.cloudfunctions.net/sendMailOverHTTP', data)
+    //         .then((response) => {
+    //           console.log(response);
+    //           setState({ name: '', email: '', subject: '', message: '' });
+    //           toast.success('Form Submitted Successfully');
+    //         })
+    //         .catch((error) => {
+    //           console.error(error);
+    //           toast.error('An error occurred while submitting the form');
+    //         });
+    //     }
+    //   };
+      
+      
 
     const handleInputChange = (e) => {
         let { name, value } = e.target;

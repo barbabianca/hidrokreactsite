@@ -34,8 +34,8 @@ var transporter = nodemailer.createTransport({
 });
 exports.sendMailOverHTTP = functions.https.onRequest((req, res) => {
     const mailOptions = {
-        from: `YourGmailEmailAddress@YouWant.com`,
-        to: `YourGmailEmailAddress@gmail.com`,
+        from: `ukasikcioglu@gmail.com`,
+        to: `ukasikcioglu@gmail.com`,
         subject: 'Email From Me to MySelf | Contact Form Message',
         html: `<h1>Contact Form Message</h1>
                             <p>
