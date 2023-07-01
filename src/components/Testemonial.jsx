@@ -8,7 +8,7 @@ import FnssLogoImg from '../assets/imgs/fnss-logo.png';
 const TestimonialSection = () => {
   return (
     <section className="section" id="testmonial">
-      <div className="container">
+      <div className="carousel-container">
         <h3 className="section-title pb-4">Referanslar</h3>
       </div>
 

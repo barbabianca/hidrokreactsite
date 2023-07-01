@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const AboutSection = () => {
   return (
     <section className="section" id="about">
-      <Container>
+      <Container className='carousel-container'>
         <Row className="align-items-center">
           <Col md={4}>
             <h3 className="section-title">Hakkımızda</h3>

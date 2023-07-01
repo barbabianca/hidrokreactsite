@@ -12,7 +12,7 @@ import rotaryActuatorsImg from '../assets/imgs/rotary-actuators.jpg';
 const PortfolioSection = () => {
   return (
     <section className="section" id="portfolio">
-      <div className="container">
+      <div className="carousel-container">
         <h3 className="section-title pb-4">Ürünler</h3>
       </div>
 

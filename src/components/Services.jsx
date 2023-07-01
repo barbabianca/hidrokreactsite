@@ -6,7 +6,7 @@ import hidrolikTankImg from '../assets/imgs/hidrolik-tank.jpg';
 const ServiceSection = () => {
   return (
     <section className="section" id="service">
-      <Container>
+      <Container className='carousel-container'>
         <h3 className="section-title mb-4">Hizmetler</h3>
 
         <Row className="text-center">

@@ -132,7 +132,7 @@ function Header() {
 
         </Carousel>
 
-        <Container className="infos mb-4 mb-md-2">
+        <Container className="infos carousel-container mb-4 mb-md-2">
           <div className="title">
             <h5>HİDROK Otomasyon San.Tic.Ltd.Şti.</h5>
             <p className="font-small">

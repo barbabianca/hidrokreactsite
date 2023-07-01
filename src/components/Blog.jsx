@@ -5,7 +5,7 @@ import BlogImage from "../assets/imgs/Why-Choke-Valves-are-Essential-in-Pilot--8
 const BlogSection = () => {
   return (
     <section className="section" id="blog">
-      <Container className="mb-3">
+      <Container className="carousel-container mb-3">
         <h3 className="section-title mb-5">Blog Posts</h3>
 
         <Row className="blog-wrapper">

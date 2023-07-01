@@ -112,7 +112,7 @@ const ContactSection = () => {
     };
     return (
         <section id="contact" className="section pb-0">
-            <Container>
+            <Container className='carousel-container'>
                 
                 <h3 className="section-title mb-5">Bize Yazın</h3>
                 <ToastContainer position="top-center" />
